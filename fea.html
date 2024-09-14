@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Productivity Tools</title>
+    <link rel="stylesheet" href="fea.css">
+</head>
+<body>
+
+    <header>
+        <h1>Productivity Tools</h1>
+    </header>
+
+    <main>
+        <!-- Calculator Section -->
+        <section id="calculator">
+            <h2>Calculator</h2>
+            <div class="calc-container">
+                <input type="text" id="calc-display" disabled>
+                <div class="calc-buttons">
+                    <button onclick="calcInput('7')">7</button>
+                    <button onclick="calcInput('8')">8</button>
+                    <button onclick="calcInput('9')">9</button>
+                    <button onclick="calcInput('/')">/</button>
+
+                    <button onclick="calcInput('4')">4</button>
+                    <button onclick="calcInput('5')">5</button>
+                    <button onclick="calcInput('6')">6</button>
+                    <button onclick="calcInput('*')">*</button>
+
+                    <button onclick="calcInput('1')">1</button>
+                    <button onclick="calcInput('2')">2</button>
+                    <button onclick="calcInput('3')">3</button>
+                    <button onclick="calcInput('-')">-</button>
+
+                    <button onclick="calcInput('0')">0</button>
+                    <button onclick="calcInput('.')">.</button>
+                    <button onclick="calcEquals()">=</button>
+                    <button onclick="calcInput('+')">+</button>
+
+                    <button onclick="calcClear()">C</button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Notes Section -->
+        <section id="notes">
+            <h2>Notes</h2>
+            <textarea id="note-area" placeholder="Write your notes here..."></textarea>
+            <button onclick="saveNote()">Save Note</button>
+            <button onclick="clearNote()">Clear Notes</button>
+        </section>
+
+        <!-- Clock Section -->
+        <section id="clock">
+            <h2>Clock</h2>
+            <div id="current-time">00:00:00</div>
+        </section>
+
+        <!-- Pomodoro Timer Section -->
+        <section id="pomodoro">
+            <h2>Pomodoro Timer</h2>
+            <div id="pomodoro-timer">25:00</div>
+            <button onclick="startPomodoro()">Start</button>
+            <button onclick="resetPomodoro()">Reset</button>
+        </section>
+    </main>
+
+    <script src="fea.js"></script>
+</body>
+</html>
